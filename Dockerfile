@@ -39,7 +39,7 @@ RUN chgrp -R 0 /var/log/httpd /var/run/httpd \
 
 #SOLUCAO - ALTERADO
 #USER Adicionado por conta do service account da questão
-USER 1001
+#USER 1001
 
 # Launch httpd
 
