@@ -37,10 +37,6 @@ RUN chgrp -R 0 /var/log/httpd /var/run/httpd \
 && chmod -R g=u /var/log/httpd /var/run/httpd \ 
 && rm -rf /run/httpd && mkdir /run/httpd
 
-#SOLUCAO - ALTERADO
-#USER Adicionado por conta do service account da questão
-#USER 1001
-
 # Launch httpd
 
 CMD /usr/sbin/httpd -DFOREGROUND
