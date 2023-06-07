@@ -22,6 +22,8 @@ RUN yum install -y --disableplugin=subscription-manager httpd && yum clean all -
 RUN  echo "Hello from the httpd-parent container!" > ${DOCROOT}/index.html
 
 # Allows child images to inject their own content into DocumentRoot
+#SOLUCAO - ALTERADO
+ONBUILD COPY src /${DOCROOT}/
 
 EXPOSE 8080
 
